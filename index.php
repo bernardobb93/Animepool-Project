@@ -1,32 +1,57 @@
 <?php
-    include('config.php');
-
-    date_default_timezone_set('America/Sao_Paulo');
-    $data=date('y-m-d h:i:s');
-    echo $data;
-    if(isset($_POST['acao'])){
-    date_default_timezone_set('America/Sao_Paulo');
-    $nome=$_POST['nome'];
-    $usuario=$_POST['usuario'];
-    $senha=$_POST['senha'];
-    $email=$_POST['email'];
-    $momento_registro=date('y-m-d h:i:s');
-    $pdo=new PDO('mysql:host=localhost;dbname=animepool','root','');
-    $sql=$pdo->prepare("INSERT INTO `usuarios` VALUES(null,?,?,?,?,?) ");
-    $sql->execute(array($nome,$usuario,$senha,$email,$momento_registro));
-    echo 'Usuario cadastrado com sucesso';
-    }
+include('config.php');
 ?>
 <!DOCTYPE html>
 <html>
-    <head><title>Cadastro de Usuario</title></head>
-    <body>
-        <form method="post">
-            <input type="text" name="nome" required/>
-            <input type="text" name="usuario" required/>
-            <input type="password" name="senha" required/>
-            <input type="text" name="email" required/>
-            <input type="submit" name="acao" value="Enviar"/>
-        </form>
-    </body>
+
+<head>
+    <link href=""/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link href="estilo/style.css" rel="stylesheet" />
+    <title>Animepool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="anime, manga, trilha, jpop" />
+    <meta name="description" content="Site de Animes, Mangas e Trilhas" />
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <header>
+        <div class="logo left"></div>
+        <!--logo-->
+        <div class="center">
+        <nav class="desktop right">
+            <ul>
+                <li><a href="index.php">Home</a> </li>
+                <li><a href="">Animes</a> </li>
+                <li><a href="">Mangas</a> </li>
+                <li><a href="">Trilhas</a> </li>
+                <li><a href="">Contatos</a> </li>
+                <li><a href="usuarios_html.php">Usuario</a> </li>
+            </ul>
+        </nav>
+        <nav class="mobile right">
+            <ul>
+                <li><a href="index.php">Home</a> </li>
+                <li><a href="">Animes</a> </li>
+                <li><a href="">Mangas</a> </li>
+                <li><a href="">Trilhas</a> </li>
+                <li><a href="">Contatos</a> </li>
+                <li><a href="usuarios_html.php">Usuario</a> </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section class="banner-principal">
+
+    </section>
+    <!--banner-principal-->
+    <section class="corpo">
+
+    </section>
+    <footer>Conteudo para demonstração</footer>
+</body>
+
 </html>
