@@ -1,5 +1,5 @@
 <?php
-include('config.php');
+include('config/config.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,9 @@ include('config.php');
 
 <body>
     <header>
-        <div class="logo left"></div>
+        <div class="logo left" >
+            <img src="img/logo.png" width="150px"/>
+        </div>
         <!--logo-->
         <div class="center">
         <nav class="desktop right">
@@ -29,7 +31,7 @@ include('config.php');
                 <li><a href="">Mangas</a> </li>
                 <li><a href="">Trilhas</a> </li>
                 <li><a href="">Contatos</a> </li>
-                <li><a href="usuarios_html.php">Usuario</a> </li>
+                <li><a href="usuarios/usuarios_html.php">Usuario</a> </li>
             </ul>
         </nav>
         <nav class="mobile right">
@@ -39,7 +41,7 @@ include('config.php');
                 <li><a href="">Mangas</a> </li>
                 <li><a href="">Trilhas</a> </li>
                 <li><a href="">Contatos</a> </li>
-                <li><a href="usuarios_html.php">Usuario</a> </li>
+                <li><a href="usuarios/usuarios_html.php">Usuario</a> </li>
             </ul>
         </nav>
         </div>

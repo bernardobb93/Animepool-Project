@@ -36,8 +36,9 @@
 /**Estilização**/
 header{
     background: skyblue;
-    padding: 30px 0;
+    padding: 160px 0;
 }
+
 .mobile{
     display: none;
 }

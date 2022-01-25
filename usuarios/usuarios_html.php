@@ -8,7 +8,7 @@ include('usuarios.php');
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
-    <link href="estilo/style.css" rel="stylesheet" />
+    <link href="/estilo/style.css" rel="stylesheet" />
     <title>Animepool - Cadastro de Usuario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="anime, manga, trilha, jpop" />
@@ -21,7 +21,7 @@ include('usuarios.php');
         <div class="center">
     <nav class="desktop right">
         <ul>
-            <li><a href="index.php">Home</a> </li>
+            <li><a href="/index.php">Home</a> </li>
             <li><a href="">Anime</a> </li>
             <li><a href="">Manga</a> </li>
             <li><a href="">Trilhas</a> </li>
@@ -31,7 +31,7 @@ include('usuarios.php');
     </nav>
     <nav class="mobile right">
         <ul>
-            <li><a href="index.php">Home</a> </li>
+            <li><a href="/index.php">Home</a> </li>
             <li><a href="">Anime</a> </li>
             <li><a href="">Manga</a> </li>
             <li><a href="">Trilhas</a> </li>
