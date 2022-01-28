@@ -96,7 +96,7 @@ nav.desktop a:hover{
     }
 
     nav.mobile ul{
-        display: block;
+        display: none;
         top: 160px;
         z-index: 3;
         position: absolute;
