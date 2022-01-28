@@ -10,6 +10,7 @@ include('config/config.php');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
     <link href="estilo/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo/font-awesome.min.css">
     <title>Animepool</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="anime, manga, trilha, jpop" />
@@ -19,11 +20,12 @@ include('config/config.php');
 
 <body>
     <header>
+    <div class="center">
         <div class="logo left" >
-            <img src="img/logo.png" width="150px"/>
+            <a href="http://animespool.com.br"></a>
         </div>
         <!--logo-->
-        <div class="center">
+        
         <nav class="desktop right">
             <ul>
                 <li><a href="index.php">Home</a> </li>
@@ -35,6 +37,9 @@ include('config/config.php');
             </ul>
         </nav>
         <nav class="mobile right">
+            <div class="botao-menu">
+               <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
             <ul>
                 <li><a href="index.php">Home</a> </li>
                 <li><a href="">Animes</a> </li>
@@ -45,15 +50,23 @@ include('config/config.php');
             </ul>
         </nav>
         </div>
+        <div class="clear"></div>
     </header>
-    <section class="banner-principal">
-
+    <section class="banner-principal w50">
+    <div>
+    
+    </div>
+    <div class="clear"></div>
     </section>
-    <!--banner-principal-->
-    <section class="corpo">
+    <section class="corpo w50">
+        <div>
 
+        </div>
+    <div class="clear"></div>
     </section>
-    <footer>Conteudo para demonstração</footer>
+    <footer><div class="center"><p>Conteudo para demonstração</p></div>
+    <div class="clear"></div>
+</footer>
 </body>
 
 </html>

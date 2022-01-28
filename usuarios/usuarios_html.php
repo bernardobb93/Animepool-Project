@@ -12,35 +12,12 @@ include('usuarios.php');
     <title>Animepool - Cadastro de Usuario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="anime, manga, trilha, jpop" />
-    <meta name="description" content="Cadastro de Usuario" />
     <meta charset="utf-8" />
+    <meta name="description" content="Cadastro de Usuario" /> 
 </head>
 
 <body>
-    <header>
-        <div class="center">
-    <nav class="desktop right">
-        <ul>
-            <li><a href="/index.php">Home</a> </li>
-            <li><a href="">Anime</a> </li>
-            <li><a href="">Manga</a> </li>
-            <li><a href="">Trilhas</a> </li>
-            <li><a href="">Contato</a> </li>
-            <li><a href="usuarios_html.php">Usuario</a> </li>
-        </ul>
-    </nav>
-    <nav class="mobile right">
-        <ul>
-            <li><a href="/index.php">Home</a> </li>
-            <li><a href="">Anime</a> </li>
-            <li><a href="">Manga</a> </li>
-            <li><a href="">Trilhas</a> </li>
-            <li><a href="">Contato</a> </li>
-            <li><a href="usuarios_html.php">Usuario</a> </li>
-        </ul>
-    </nav>
-        </div>
-    </header>
+    <link href="/padroes/header.html"/>
     <section class="formulario">
     <form method="post">
         <input type="text" name="nome" required />
