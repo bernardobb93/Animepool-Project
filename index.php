@@ -67,6 +67,10 @@ include('config/config.php');
     <footer><div class="center"><p>Conteudo para demonstração</p></div>
     <div class="clear"></div>
 </footer>
+<script src="js/jquery.js"></script>
+<script>
+  
+</script>
 </body>
 
 </html>

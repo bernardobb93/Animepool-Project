@@ -78,6 +78,9 @@ footer p{
     font-size: 15px;
 
 }
+nav.desktop a:hover{
+    text-decoration: underline white;
+}
 @media screen and (max-width:700px){
     nav.desktop{
         display: none !important;
