@@ -6,6 +6,12 @@
 }
 
 /**Boot CSS**/
+html,body{
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
 img{
     width: 100%;
 }
@@ -70,6 +76,9 @@ nav.desktop a{
 footer {
     background: skyblue;
     padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 footer p{
     color:white;
@@ -81,6 +90,69 @@ footer p{
 nav.desktop a:hover{
     text-decoration: underline white;
 }
+.contato-container{
+    text-align: center;
+    padding: 40px 0;
+}
+.contato-container input[type=text]{
+    width: 100%;
+    margin: 6px 0;
+    height: 40px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: black;
+    border:1px solid black;
+    max-width: 500px;
+}
+.contato-container textarea{
+    width: 100%;
+    margin: 6px 0;
+    height: 100px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: black;
+    border:1px solid black;
+    max-width: 500px;
+    resize: none;
+    padding: 8px;
+}
+.contato-container input[type=submit]{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(16, 94, 94);
+    color: white;
+    cursor: pointer;
+}
+.redes-sociais{
+    margin: 20px 0;
+}
+.redes-sociais h2{
+    font-size: 50px;
+}
+.fa-twitter{
+    color: rgb(29,155,240);
+    cursor: pointer;
+}
+.fa-linkedin-square{
+    color: #0a66c2;
+    cursor: pointer;
+}
+.fa-facebook-square{
+color:#166fe5;
+cursor: pointer;
+}
+.fa.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+.fa-github-square{
+    color:black;
+    cursor: pointer;
+    }
 @media screen and (max-width:700px){
     nav.desktop{
         display: none !important;
